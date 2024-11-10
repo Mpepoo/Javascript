@@ -4,28 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <style>
+        .field-input {
+    display: grid;
+}
+    </style>
 </head>
 <body>
     <form id="form" style="display: flex; flex-direction: column; gap: 5px; margin: 5% auto; width: 500px;">
-       <label> Full Name</label>
-        <input type="text" name="" id="fname">
-        <div id= "error" class="error"></div>
 
-        <label> Email</label>
-        <input type="email" name="" id="email">
-        <div id= "error" class="error"></div>
+       <div class="field-input">
+           <label> Full Name</label>
+            <input type="text" name="" id="fname">
+            <div id= "error" class="error"></div>
+       </div>
 
-        <label>mobile</label>
-        <input type="tel" name="" id="tel">
-        <div id= "error" class="error"></div>
+        <div class="field-input">
+            <label> Email</label>
+            <input type="email" name="" id="email">
+            <div id= "error" class="error"></div>
+        </div>
 
-        <label>Subject</label>
-        <input type="text" name="" id="subject">
-        <div id= "error" class="error"></div>
+        <div class="field-input">
+            <label>mobile</label>
+            <input type="tel" name="" id="tel">
+            <div id= "error" class="error"></div>
+        </div>
 
-        <label> Comments</label>
-        <input style="height: 100px" type="text" name="" id="comments" >
-        <div id= "error" class="error"></div>
+        <div class="field-input">
+            <label>Subject</label>
+            <input type="text" name="" id="subject">
+            <div id= "error" class="error"></div>
+        </div>
+
+        <div class="field-input">
+            <label> Comments</label>
+            <input style="height: 100px" type="text" name="" id="comments" >
+            <div id= "error" class="error"></div>
+        </div>
 
         <button type="submit" id="btn-submit">Send</button>
     </form>

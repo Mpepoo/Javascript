@@ -1,4 +1,4 @@
-const form= document.querySelector('form');
+const form = document.getElementById('form');
 const fname = document.getElementById('fname');
 const email= document.getElementById('email');
 const tel = document.getElementById ('tel');
@@ -30,7 +30,7 @@ const setSuccess = element => {
 const isValidEmail = (email) => {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email);
-};
+}
 
 
 const checkInputs = () => {
